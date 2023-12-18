@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "Cera" ;
-    src: url('../fonts/JosefinSans-VariableFont_wght.ttf');
+    src: url('../fonts/GoogleSans-Regular.ttf');
 }
 
 body{
@@ -36,7 +36,7 @@ a{
 
 .description-1{
     background: url('../images/user-website-0.jpg') center/cover;
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
 }
 
 .description-2{
@@ -50,8 +50,25 @@ a{
 .formulaire{
     width: 50%;
     margin-right: 10px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 40px 20px 40px 20px;
+}
+
+.form-header{
+    padding:  10px;
+    margin-bottom: 20px;
+    /* background-color: #f6b910e3; */
+    box-shadow: 1px 1px 10px 0px rgba(179, 180, 180, 0.75); 
+}
+
+.form-header h2{
+    color: blue;
+    text-align: center;
+}
+
+
+.form-header p{
+    padding: 10px;
 }
 /* ------------------------------------------------------- */
 /* Input de type email */
@@ -64,7 +81,7 @@ input[type="email"]{
     padding: 7px ;
     font-size: 15px;
     width: 100%;
-    border: 2px solid rgb(255, 0, 153);
+    /* border: 2px solid rgb(255, 0, 153); */
 }
 
 /* ------------------------------------------------------- */
@@ -74,7 +91,7 @@ input[type="email"]{
 }
 
 input[type="password"]{
-    border: 2px solid rgb(245, 122, 8);
+    /* border: 2px solid rgb(245, 122, 8); */
     padding: 7px ;
     font-size: 15px;
     width: 100%;
@@ -84,7 +101,7 @@ input[type="text"]{
     padding: 7px ;
     font-size: 15px;
     width: 100%;
-    border: 2px solid rgb(2, 106, 23);
+    /* border: 2px solid rgb(2, 106, 23); */
 }
 
 .password-container p{
@@ -108,7 +125,7 @@ input[type="text"]{
 /* ------------------------------------------------------- */
 /* Input de type Checkbox */
 .checkbox-container {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     display: flex;
     align-items: center;
     padding: 4px 0 4px 4px;   
@@ -116,7 +133,7 @@ input[type="text"]{
 
 .checkbox-container a {
     margin: 0 0 0 auto;
-    color: rgb(0, 110, 94);;
+    color: blue;
     font-weight: 550;  
 }
 
@@ -127,7 +144,7 @@ input[type="text"]{
 /* Input de type buttonbox */
 
 .buttonbox{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,12 +200,12 @@ input[type="text"]{
     margin-bottom: 7px;
     flex-direction: row;
     justify-content: center;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding: 5px;
 }
 
 .options a{
-    color:rgb(0, 110, 94); 
+    color:blue; 
     font-weight: 550;
 }
 
@@ -200,7 +217,8 @@ input[type="text"]{
     padding: 7px;
     width: 100%;
 }
-
+/* -------------------------------------- */
+/* Responsive part */
 @media screen and (max-width: 1300px) {
     .main-container {
       width: 70%;
@@ -241,9 +259,9 @@ input[type="text"]{
 @media screen and (max-width: 730px) {
     .main-container {
         padding: 20px 40px 20px 40px;
-        width: 90%;
+        width: 100%;
         height: 100vh;
-        margin: 0 auto;
+        margin: 0 10px;
     }
 
     .buttonbox a{
@@ -261,7 +279,7 @@ input[type="text"]{
 
     .formulaire{
         width: 100%;
-        padding: 40px 10px 40px 10px;
+        padding: auto;
     }
 }
 
@@ -270,31 +288,34 @@ input[type="text"]{
     .main-container {
         padding: 10px 10px 0 10px;
         width: 100%;
-        margin: 0 auto;
+        margin: 0;
         height: 100vh;
     }
 
     .buttonbox a{
-        width: 50%;
+        width: 65%;
         margin-right: 10px;
+        text-align: center;
     }
 
     .submit-btn{
-        width: 50%;
+        width: 35%;
     }
 
     .formulaire{
         width: 100%;
-        padding: 40px 0px 20px 0px;
+        padding: 40px 0px 10px 0px;
         margin: auto;
     }
 
     .checkbox-container {
         border: 3px solid red;
         display: flex;
-        padding: 4px 0;
+        padding: 20px 0;
     }
-
+    .up{
+        padding: 40px;
+    }
     .checkbox-container a {
         /* border: 1px solid blue; */
         transform: translateY(-25%);
@@ -312,8 +333,8 @@ input[type="text"]{
 @media screen and (max-width: 300px) {
 
     .main-container{
-        height: 100vh;
-        margin: 0 auto;
+        height: 100%;
+        width: 100%;
     }
 
     .buttonbox a{
@@ -328,6 +349,7 @@ input[type="text"]{
     .formulaire{
         width: 100%;
         padding: 40px 0px 40px 0px;
+        height: 100vh;
     }
 
     .checkbox-container {
@@ -348,8 +370,9 @@ input[type="text"]{
     .up{
         font-family: "Cera", serif;
     }
-    .options span, a, label, .checkbox-container a, h4, .up{
+    .options span, a, label, .checkbox-container a, h4, .up {
         font-size: 13px;
+        /* padding: 7px ; */
     }
 }
 
