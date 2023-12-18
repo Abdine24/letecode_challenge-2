@@ -1,0 +1,354 @@
+/* General rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Cera" ;
+    src: url('../fonts/JosefinSans-VariableFont_wght.ttf');
+}
+
+body{
+    font-family:"Cera", 'Segoe UI', Verdana, sans-serif;
+    background: #a8a1a1e3;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}
+
+/* ------------------------------------------------------- */
+.df{
+    display: flex;
+}
+
+/* ------------------------------------------------------- */
+.main-container{
+    width: 60%;
+    margin: 40px auto;
+    background-color:rgb(255, 255, 255) ;
+    padding: 40px;
+    border-radius: 7px;
+}
+
+.description-1{
+    background: url('../images/user-website-0.jpg') center/cover;
+    border: 1px solid red; 
+}
+
+.description-2{
+    background: url('../images/user-website-2.jpg') center/cover;
+}
+
+.overlay{
+    width: 50%;
+}
+/* ------------------------------------------------------- */
+.formulaire{
+    width: 50%;
+    margin-right: 10px;
+    border: 2px solid red;
+    padding: 40px 20px 40px 20px;
+}
+/* ------------------------------------------------------- */
+/* Input de type email */
+h4{
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+input[type="email"]{
+    padding: 7px ;
+    font-size: 15px;
+    width: 100%;
+    border: 2px solid rgb(255, 0, 153);
+}
+
+/* ------------------------------------------------------- */
+/* Input de type Password */
+.password-container {
+    position:relative;
+}
+
+input[type="password"]{
+    border: 2px solid rgb(245, 122, 8);
+    padding: 7px ;
+    font-size: 15px;
+    width: 100%;
+}
+
+input[type="text"]{
+    padding: 7px ;
+    font-size: 15px;
+    width: 100%;
+    border: 2px solid rgb(2, 106, 23);
+}
+
+.password-container p{
+    position:absolute;
+    right: 10px;
+    top: 8px;
+}
+
+.password-container p:hover{
+    scale:1.1;
+}
+
+.showPassword{
+    padding: 7px ;
+    font-size: 15px;
+    width: 100%;
+}
+.hidden{
+    display:none;
+}
+/* ------------------------------------------------------- */
+/* Input de type Checkbox */
+.checkbox-container {
+    border: 3px solid red;
+    display: flex;
+    align-items: center;
+    padding: 4px 0 4px 4px;   
+}
+
+.checkbox-container a {
+    margin: 0 0 0 auto;
+    color: rgb(0, 110, 94);;
+    font-weight: 550;  
+}
+
+.checkbox-container label{
+    margin: 0 auto 0 5px;   
+}
+/* ------------------------------------------------------- */
+/* Input de type buttonbox */
+
+.buttonbox{
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    margin-bottom: 15px; 
+}
+
+.buttonbox a{
+    width: 65%;
+    padding: 6px ;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    justify-content:space-between;
+    margin-right: 30px;
+    box-shadow: 1px 1px 10px 0px rgba(179, 180, 180, 0.75); 
+}
+
+.google-sign img{
+    width: 20px;
+}
+
+.google-sign p{
+    font-size: 14px;
+}
+
+.buttonbox a p{
+    color: rgb(0, 0, 0);  
+}
+
+.submit-btn{
+    width: 35%;
+}
+
+.submit-btn button{
+    width: 100%;
+    padding: 7px ;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Cera";
+    margin: 0 auto ;
+    color:black;
+    background: rgb(94, 168, 242);
+    border: none;
+    box-shadow: 1px 1px 10px 0px rgba(179, 180, 180, 0.75);
+}
+
+/* ------------------------------------------------------- */
+/* Alternative */
+
+.options{
+    flex-direction: column;
+    margin-bottom: 7px;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid blue;
+    padding: 5px;
+}
+
+.options a{
+    color:rgb(0, 110, 94); 
+    font-weight: 550;
+}
+
+.mbt{
+    margin-bottom: 15px;
+}
+
+.pd7w1{
+    padding: 7px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+    .main-container {
+      width: 70%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .main-container {
+      width: 80%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .main-container {
+        padding: 20px 20px 20px 0;
+        width: 80%;
+    }
+
+    .formulaire{
+        width: 50%;
+        margin-right: 10px;
+        padding: 40px 10px 40px 10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main-container {
+        padding: 20px 0 20px 0;
+        width: 90%
+    }
+
+    .formulaire{
+        width: 50%;
+        padding: 40px 10px 40px 10px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .main-container {
+        padding: 20px 40px 20px 40px;
+        width: 90%
+    }
+
+    .buttonbox a{
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    .submit-btn{
+        width: 50%;
+    }
+
+    .overlay{
+        display: none;
+    }
+
+    .formulaire{
+        width: 100%;
+        padding: 40px 10px 40px 10px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .main-container {
+        padding: 10px ;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .buttonbox a{
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    .submit-btn{
+        width: 50%;
+    }
+
+    .formulaire{
+        width: 100%;
+        padding: 40px 0px 40px 0px;
+    }
+
+    .checkbox-container {
+        border: 3px solid red;
+        display: flex;
+        padding: 4px 0;
+    }
+
+    .checkbox-container a {
+        /* border: 1px solid blue; */
+        transform: translateY(-25%);
+    }
+
+    .checkbox-container a {
+        padding-top: 10px;
+    }
+
+    .submit-btn button{
+        width: 100%;
+        padding: 7px ;   
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 300px) {
+
+    .buttonbox a{
+        width: 70%;
+        margin-right: 10px;
+    }
+
+    .submit-btn{
+        width: 30%;
+    }
+
+    .formulaire{
+        width: 100%;
+        padding: 40px 0px 40px 0px;
+    }
+
+    .checkbox-container {
+        border: 3px solid red;
+        display: flex;
+        padding: 4px 0;
+    }
+
+    .checkbox-container a {
+        /* border: 1px solid blue; */
+        transform: translateY(-25%);
+    }
+
+    .submit-btn button{
+        width: 100%;
+        padding: 8px ;   
+    }
+    .up{
+        font-family: "Cera", serif;
+    }
+    .options span, a, label, .checkbox-container a, h4, .up{
+        font-size: 13px;
+    }
+}
+
+
+
